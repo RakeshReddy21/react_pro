@@ -22,6 +22,7 @@ function Tables() {
 
     <div className="App">
         <h1>Task -2 </h1>
+        <h3>Date - 19/11/2024</h3>
       <h1>Movie Tables</h1>
       <table style={tableStyles}>
         <tr>
