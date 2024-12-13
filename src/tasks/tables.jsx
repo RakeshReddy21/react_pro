@@ -1,3 +1,4 @@
+import '../App.css'
 import animal from './assests/item-6.jpg'
 import rrr from './assests/download.jpeg'
 import Bhahubali from './assests/download.webp'
@@ -20,6 +21,7 @@ function Tables() {
   return (
 
     <div className="App">
+        <h1>Task -2 </h1>
       <h1>Movie Tables</h1>
       <table style={tableStyles}>
         <tr>
