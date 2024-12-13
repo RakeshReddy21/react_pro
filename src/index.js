@@ -4,20 +4,22 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Portfolio from './portfolio/portfolio';
-import Resume from './Resume/resume';
-import Navbar from './Resume/navbar';
-import Header from './Resume/home';
+// import Resume from './Resume/resume';
+// import Navbar from './Resume/navbar';
+// import Header from './Resume/home';
 // import Btn from './Resume/button'
 // import ADD from './addcart/addcart'
 // import Hello from './tasks/routes'; 
+import Intro from './tasks/intro';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+    <Intro/>
     {/* <Portfolio/> */}
-    <Navbar/>
-    <Header/>
+    {/* <Navbar/> */}
+    {/* <Header/> */}
     {/* <Resume/> */}
     {/* <Hello/> */}
     {/* <Btn/> */}
