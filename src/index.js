@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Resume from './Resume/resume';
 import Navbar from './Resume/navbar';
 import Header from './Resume/home';
-import Btn from './Resume/button'
+// import Btn from './Resume/button'
 // import ADD from './addcart/addcart'
 // import Hello from './tasks/routes'; 
 
@@ -18,7 +18,7 @@ root.render(
     {/* <Portfolio/> */}
     <Navbar/>
     <Header/>
-    <Resume/>
+    {/* <Resume/> */}
     {/* <Hello/> */}
     {/* <Btn/> */}
     {/* <ADD/> */}
