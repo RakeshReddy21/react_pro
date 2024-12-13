@@ -10,13 +10,15 @@ import reportWebVitals from './reportWebVitals';
 // import Btn from './Resume/button'
 // import ADD from './addcart/addcart'
 // import Hello from './tasks/routes'; 
-import Intro from './tasks/intro';
+// import Intro from './tasks/intro';
+import Tables from './tasks/tables'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Intro/>
+    {/* <Intro/> */}
+    <Tables/>
     {/* <Portfolio/> */}
     {/* <Navbar/> */}
     {/* <Header/> */}
