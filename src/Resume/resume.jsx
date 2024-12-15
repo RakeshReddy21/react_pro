@@ -23,6 +23,15 @@ function Form() {
   const [submittedData, setSubmittedData] = useState(null);
   const [activeSection, setActiveSection] = useState("introduction"); // Track active section
 
+  // Array of section keys for navigation
+  const sectionKeys = [
+    "introduction",
+    "profile",
+    "projects",
+    "skills",
+    "achievements",
+  ];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -61,27 +70,27 @@ function Form() {
     setImagePreview(null); // Clear the image preview
   };
 
+  const handleNext = () => {
+    const currentIndex = sectionKeys.indexOf(activeSection);
+    if (currentIndex < sectionKeys.length - 1) {
+      setActiveSection(sectionKeys[currentIndex + 1]); // Navigate to the next section
+    }
+  };
+
   return (
     <div className="content">
       <div className="inputs">
         <h2>Submit Your Details</h2>
         <div className="navigation">
-          <button onClick={() => setActiveSection("introduction")}>
-            Introduction
-          </button>{" "}
-          &nbsp; &nbsp;
-          <button onClick={() => setActiveSection("profile")}>
-            Profile
-          </button>{" "}
-          &nbsp;&nbsp;
-          <button onClick={() => setActiveSection("projects")}>Projects</button>
-          &nbsp;&nbsp;
-          <button onClick={() => setActiveSection("skills")}>Skills</button>
-          &nbsp;&nbsp;
-          <button onClick={() => setActiveSection("achievements")}>
-            Achievements
-          </button>
-          &nbsp;&nbsp;
+          {sectionKeys.map((section, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveSection(section)}
+              className={activeSection === section ? "active" : ""}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </button>
+          ))}
         </div>
         <br />
         <br />
@@ -263,7 +272,12 @@ function Form() {
             </div>
           )}
 
+          <button className="next" type="button" onClick={handleNext}>
+            Next
+          </button>
+          &nbsp;&nbsp;
           <button type="submit">Submit</button>
+          
         </form>
       </div>
 

@@ -4,9 +4,9 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Portfolio from './portfolio/portfolio';
-// import Resume from './Resume/resume';
-// import Navbar from './Resume/navbar';
-// import Header from './Resume/home';
+import Resume from './Resume/resume';
+import Navbar from './Resume/navbar';
+import Header from './Resume/home';
 // import Btn from './Resume/button'
 // import ADD from './addcart/addcart'
 // import Hello from './tasks/routes'; 
@@ -17,12 +17,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Intro/>
-    <Tables/>
+    {/* <Intro/> */}
+    {/* <Tables/> */}
     {/* <Portfolio/> */}
-    {/* <Navbar/> */}
-    {/* <Header/> */}
-    {/* <Resume/> */}
+    <Navbar/>
+    <Header/>
+    <Resume/>
     {/* <Hello/> */}
     {/* <Btn/> */}
     {/* <ADD/> */}
